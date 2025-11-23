@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+<h1>Welcome to AMU Schools</h1>
+
+<h2>Student Form</h2>
+<form method="POST">
+  Name: <input type="text" name="name" required><br><br>
+  Roll No: <input type="text" name="roll" required><br><br>
+  Class: <input type="text" name="class" required><br><br>
+  <button type="submit">Submit</button>
+</form>
+
+<h2>Student List</h2>
+<ul>
+{% for s in students %}
+<li>{{s.name}} - {{s.roll}} - {{s.class}}</li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
