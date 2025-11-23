@@ -1,0 +1,12 @@
+body {
+  background: linear-gradient(to right, #0066ff, #00ccff);
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
