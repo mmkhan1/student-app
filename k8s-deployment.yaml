@@ -15,6 +15,7 @@ spec:
       containers:
       - name: student-app
         image: mmkhan1/student-app:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 5000
 ---
